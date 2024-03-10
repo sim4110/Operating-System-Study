@@ -72,10 +72,9 @@ int main(){
 
     Queue *tail = NULL;
    
-    Add(&tail, 1);
-    Add(&tail, 2);
-    Add(&tail, 3);
-  
+    for(int i=0; i<4;i++){
+        Add(&tail, i);
+    }
     for(int i=0; i<3; i++){
         Remove(&tail);
     }
